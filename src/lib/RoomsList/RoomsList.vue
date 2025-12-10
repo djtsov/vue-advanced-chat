@@ -170,7 +170,7 @@ export default {
 		customSearchRoomEnabled: { type: [Boolean, String], default: false },
 		roomActions: { type: Array, required: true },
 		scrollDistance: { type: Number, required: true },
-    defaultGroupName: {type: String, default: 'Default group'},
+    defaultGroupName: { type: String, default: 'Default group' },
 		groups: { type: Array, default: () => [] }
 	},
 
