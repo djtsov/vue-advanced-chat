@@ -404,7 +404,7 @@ export default {
 
 				if (
 					!this.loadingMoreRooms &&
-					this.loadFirstRoomCasted &&
+          (this.loadFirstRoomCasted || this.roomId) &&
 					newVal[0] &&
 					(!oldVal || newVal.length !== oldVal.length)
 				) {
