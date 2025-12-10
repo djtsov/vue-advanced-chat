@@ -140,6 +140,10 @@
 							</div>
 						</template>
 
+            <div class="vac-message-thread-replies">
+              <slot :name="'thread-replies_' + message._id"></slot>
+            </div>
+
 						<div class="vac-text-timestamp">
 							<div
 								v-if="message.edited && !message.deleted"
